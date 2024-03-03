@@ -3,6 +3,8 @@ import zipfile
 import os
 import shutil
 
+if not os.path.isdir("bin"):
+    os.mkdir("bin")
 def buildWindows():
     import py2exe
     py2exe.freeze(
@@ -27,7 +29,5 @@ elif sys.argv[0] == "cleanup":
     print(os.getcwd())
 elif sys.args[0] == "actions":
     os.chdir("D:\\a\\MinecraftLauncher\\MinecraftLauncher")
-    if not os.path.isdir("bin"):
-        os.mkdir("bin")
     buildWindows()
     buildLinux()
