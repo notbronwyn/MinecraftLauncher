@@ -26,6 +26,7 @@ elif sys.argv[0] == "linux":
 elif sys.argv[0] == "cleanup":
     shutil.rmtree("bin")
     shutil.rmtree("dist")
+    print("os.getcwd()")
 else:
     buildWindows()
     buildLinux()
