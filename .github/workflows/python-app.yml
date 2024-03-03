@@ -24,7 +24,7 @@ jobs:
     - name: Make executables
       run: |
         dir
-        ./setup.py
+        ./setup.py actions
     - name: Upload linux artifacts
       uses: actions/upload-artifact@v4
       with:

@@ -27,6 +27,7 @@ elif sys.argv[0] == "cleanup":
     shutil.rmtree("bin")
     shutil.rmtree("dist")
     print(os.getcwd())
-else:
+elif sys.args[0] == "actions":
+    os.chdir("D:\\a\\MinecraftLauncher\\MinecraftLauncher")
     buildWindows()
     buildLinux()
