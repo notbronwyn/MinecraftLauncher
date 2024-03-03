@@ -36,4 +36,5 @@ jobs:
         path: ${{ github.workspace }}\bin\MinecraftLauncher.zip
     - name: Cleanup 
       run: |
+        dir
         ./setup.py cleanup
