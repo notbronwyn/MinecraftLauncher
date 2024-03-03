@@ -23,6 +23,9 @@ if sys.argv[0] == "windows":
     buildWindows()
 elif sys.argv[0] == "linux":
     buildLinux()
+elif sys.argv[0] == "cleanup":
+    shutil.rmtree("bin")
+    shutil.rmtree("dist")
 else:
     buildWindows()
     buildLinux()
