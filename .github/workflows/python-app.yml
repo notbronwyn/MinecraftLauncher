@@ -23,6 +23,7 @@ jobs:
         pip install py2exe requests
     - name: Make executables
       run: |
+        dir
         ./setup.py
     - name: Upload linux artifacts
       uses: actions/upload-artifact@v4
